@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+h1  {font-family: 'alata';font-size: 50px; font-kerning:normal; 
+	padding-left: 50px;
+}
+.subhead{
+	font-size: 30px;
+}
+#navbar {
+	position:sticky;
+	top: 0px;
+	z-index: 1;
+	background-color: #c8ceda;  
+	font-family: "dm sans";
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+	padding: 15px;
+}
+#navbar * { 
+	text-decoration: none;
+	color: black;
+	margin: 7px;
+	text-align: center;
+	font-weight: 500;
+	
+	
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	background-color: #00142d;
+}
+.horoscope{
+	font-size: 20px;
+}
+p { font-family: Arial;
+width: 750px;
+padding-left: 120px;
+padding-right: 10px;
+padding-top: 20px;
+font-family: 'dm sans';
+line-height: 30px} 
+img {
+  transition: transform 600s;
+}.source {
+	font-size: 14px;
+}
+img:hover {
+  transform: rotate(36000deg)
+}.subhead {
+}
+.horoscope {
+}
+.source {
+}

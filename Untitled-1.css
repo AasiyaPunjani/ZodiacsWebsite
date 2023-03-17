@@ -1,10 +1,49 @@
 @charset "utf-8";
 /* CSS Document */
-h1  {font-family: 'alata';font-size: 50px; font-kerning:normal; 
-	padding-left: 50px;
+h1  {font-family: 'alata';
+	font-size: 150px; 
+	font-kerning:normal; 
+	text-align: left;
+	padding: 50px;
+	transition: 0.5s;
+}
+#starsVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+	opacity: 50%;
+	z-index: -1;
+  min-width: 100%;
+	min-height: 100%;
+}
+@media (min-aspect-ratio: 16/9){
+	#starsVideo{
+		width: 100%;
+		height: auto;
+	}
+	
+}
+@media (max-aspect-ratio: 16/9){
+	#starsVideo{
+		width: auto;
+		height: 100%;
+	}
+	
+}
+
+
+.header{
+	padding-bottom: 175px;
+	text-align: center;
+}
+.header:hover{
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+	opacity: 50%;
+	
 }
 .subhead{
-	font-size: 30px;
+	font-size: 50px;
 }
 #navbar {
 	position:sticky;
@@ -16,6 +55,7 @@ h1  {font-family: 'alata';font-size: 50px; font-kerning:normal;
 	font-style: normal;
 	font-size: 16px;
 	padding: 15px;
+	opacity: 85%;
 }
 #navbar * { 
 	text-decoration: none;
@@ -26,6 +66,155 @@ h1  {font-family: 'alata';font-size: 50px; font-kerning:normal;
 	
 	
 }
+
+#navbar a:hover{
+	 background-color:#EFF1F4;
+}
+	.dropdown {
+  overflow: hidden;
+}.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#EFF1F4;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.description{
+	
+	font-family: "dm sans";
+	font-weight: 300;
+	font-style: normal;
+	font-size: 18px;
+	width: 55%;
+	margin-left: 35px;
+
+}
+.content {
+	background-color: white opacity 60;	
+	
+  
+}
+.button{
+	font-family: "dm sans";
+}
+.button hover{
+	cursor: hover;
+	background-color:#EFF1F4;
+	
+}
+.aura{
+	background-color: #c8ceda;
+	font-family: "dm sans";
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	margin-left: 50px;
+	border-radius: 4px;
+}
+.horoscope{
+	text-decoration: none;
+	background-color:#E0E4EA;
+	font-family: "dm sans";
+	border-radius: 4px;
+	color: black;
+	padding: 10px;
+	min-width: 250px;
+	max-width: 300px;
+	margin-left: 255px;
+	opacity: 75%;
+}
+.horoscope{
+	text-decoration: none;
+}
+.horoscope:hover{
+	cursor: hover;
+	background-color:#EFF1F4;
+}
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: black;}
+a:active {text-decoration: none;color: black;}
+a {text-decoration: none;color: black;}
+.aura:hover{
+	cursor: hover;
+	background-color:#EFF1F4;
+}
+.born {
+	padding-bottom: 25px;
+	padding-left: 30px;
+	font-family: "dm sans";
+	font-weight: 300;
+	font-style: normal;
+	font-size: 25px;
+	
+}
+.mytabs {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 50px auto;
+	padding: 25px;
+	font-family: "dm sans";
+	
+}
+.mytabs input[type="radio"]{
+	display: none
+}
+.mytabs label {
+	padding: 10px;
+	background: #0C2C54;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: "dm sans";
+	float: left;
+}
+.mytabs label:hover {
+	 background-color: #1D3C63;
+}
+.mytabs .tab {
+	width: 100%;
+	padding: 20px;
+	background:#1D3C63;
+	order: 1;
+	display: none;
+}
+.mytabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+.mytabs input[type="radio"]:checked + label {
+	background: #1D3C63;
+}
+
+
 body
 {
 	margin: 0px;
@@ -33,26 +222,74 @@ body
 	color: white;
 	background-color: #00142d;
 }
-.horoscope{
-	font-size: 20px;
-}
-p { font-family: Arial;
+
+p { 
 width: 750px;
+	text-align: justify;
 padding-left: 120px;
-padding-right: 10px;
+padding-right: 120px;
 padding-top: 20px;
 font-family: 'dm sans';
-line-height: 30px} 
-img {
+font-size: 20px;
+line-height: 22px;
+margin-left: auto;
+	margin-right: auto;
+	}
+.ImgMain {
   transition: transform 600s;
 }.source {
-	font-size: 14px;
+	font-size: 16px;
 }
-img:hover {
+.ImgMain:hover {
   transform: rotate(36000deg)
 }.subhead {
 }
 .horoscope {
 }
 .source {
+}
+.pageimage{
+	float: right;
+	padding-right: 200px;
+	padding-left: 20px;
+	opacity: 80%;
+	
+}
+.aries{
+	padding-right: 300px;
+	opacity: 80%;
+		float: right;
+}
+.aquarius{
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-right: -20px;
+	float: right;
+	opacity: 80%;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+	opacity: 70%;
+}
+@media (min-aspect-ratio: 16/9){
+	#myVideo{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9){
+	#myVideo{
+		width: auto;
+		height: 100%;
+	}
+}
+
+.header {
+}
+.description {
+}
+.aries {
 }

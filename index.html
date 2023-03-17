@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
-	<link rel="shortcut icon" type="image/png" href="favicon.png">
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <meta charset="utf-8">
 <title>Zodiacs - Home Page</title>
 <div id="navbar"><nav class="sticky"></nav>
@@ -18,9 +18,10 @@
 	<a href="file:///C|/Users/Aasiya Zahra Punjani/Documents/OCAD Year 2/Graphic Design 2/A2/libra.html">Libra</a>
 	<a href="file:///C|/Users/Aasiya Zahra Punjani/Documents/OCAD Year 2/Graphic Design 2/A2/scorpio.html">Scorpio</a>
 	<a href="file:///C|/Users/Aasiya Zahra Punjani/Documents/OCAD Year 2/Graphic Design 2/A2/sagittarius.html">Sagittarius</a>
+	<a href="file:///C|/Users/Aasiya Zahra Punjani/Documents/OCAD Year 2/Graphic Design 2/A2/More.html">More</a>
+  </div>
 	
-</div>
-	<h1 style="color: #FFFFFF" align="left">THE ZODIACS</h1>
+	<h1 align="centre" class="header" style="color: #FFFFFF">THE ZODIACS</h1>
 <link href="file:///C|/Users/Aasiya Zahra Punjani/Documents/OCAD Year 2/Graphic Design 2/A2/Untitled-1.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" type="image/png" href="file:///C|/Users/Aasiya Zahra Punjani/Documents/OCAD Year 2/Graphic Design 2/A2/favicon.png">
 </head>
@@ -34,15 +35,97 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <body bgcolor="#00142d">
-<p><strong>The zodiacs are 12 constellations that exist in the Zodiac Belt. As the Earth rotates around the sun, we are able to see different constellations. Depending on where the Earth is when you are born, you can identify your zodiac sign, which can tell you about your personality, characteristics, and horoscope.</strong></p>
-<img src="file:///C|/Users/Aasiya Zahra Punjani/Documents/OCAD Year 2/Graphic Design 2/A2/wheel-02-02.png" width="800" height="776" alt=""/ class="ImgMain">
+	<video autoplay muted loop id="myVideo">
+  <source src="Night Sky.mp4" type="video/mp4">
+</video>
+<div class="description"><p>The zodiacs are 12 constellations that exist in the Zodiac Belt. As the Earth rotates around the sun, we are able to see different constellations. Depending on where the Earth is when you are born, you can identify your zodiac sign, which can tell you about your personality, characteristics, and horoscope.</p> </div>
+<img src="file:///C|/Users/Aasiya Zahra Punjani/Documents/OCAD Year 2/Graphic Design 2/A2/wheel-02-02.png" width="1000" height="970" alt=""/ class="ImgMain">
 	<style>
 		
 		.ImgMain {
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
+			align-items: center;
 		}
 	</style>
+<div class="born">
+	<strong>When is your birthday?</strong></div>
+<div class="mytabs">
+<input type="radio" id="tabcapricorn" name="mytabs" checked="checked">
+	<label for="tabcapricorn">22nd December - 19th January</label>
+	<div class="tab">
+	<h2>22nd December - 19th January</h2>
+		<p>You are a <strong>Capricorn</strong>!</p>
+	</div>
+	<input type="radio" id="tabaquarius" name="mytabs">
+	<label for="tabaquarius">20th January - 18th February</label>
+	<div class="tab">
+	<h2>20th January - 18th February</h2>
+		<p>You are an <strong>Aquarius</strong>!</p>
+	</div>
+	<input type="radio" id="tabpisces" name="mytabs">
+	<label for="tabpisces">19th February - 20th March</label>
+	<div class="tab">
+	<h2>19th February - 20th March</h2>
+		<p>You are a <strong>Pisces</strong>!</p>
+	</div>
+	<input type="radio" id="tabaries" name="mytabs">
+	<label for="tabaries">21st March - 19th April</label>
+	<div class="tab">
+	<h2>21st March - 19th April</h2>
+		<p>You are an <strong>Aries</strong>!</p>
+	</div>
+	<input type="radio" id="tabtaurus" name="mytabs">
+	<label for="tabtaurus">20th April - 20th May</label>
+	<div class="tab">
+	<h2>20th April - 20th May</h2>
+		<p>You are a <strong>Taurus</strong>!</p>
+	</div>
+	<input type="radio" id="tabgemini" name="mytabs">
+	<label for="tabgemini">21st May - 20th June</label>
+	<div class="tab">
+	<h2>21st May - 20th June</h2>
+		<p>You are a <strong>Gemini</strong>!</p>
+	</div>
+	<input type="radio" id="tabcancer" name="mytabs">
+	<label for="tabcancer">21st June - 22nd July</label>
+	<div class="tab">
+	<h2>21st June - 22nd July</h2>
+		<p>You are a <strong>Cancer</strong>!</p>
+	</div>
+	<input type="radio" id="tableo" name="mytabs">
+	<label for="tableo">23rd July - 22nd August</label>
+	<div class="tab">
+	<h2>23rd July - 22nd August</h2>
+		<p>You are a <strong>Leo</strong>!</p>
+	</div>
+	<input type="radio" id="tabvirgo" name="mytabs">
+	<label for="tabvirgo">23rd August - 22nd September</label>
+	<div class="tab">
+	<h2>23rd August - 22nd September</h2>
+		<p>You are a <strong>Virgo</strong>!</p>
+	</div>
+	<input type="radio" id="tablibra" name="mytabs">
+	<label for="tablibra">23rd September - 22nd October</label>
+	<div class="tab">
+	<h2>23rd September - 22nd October</h2>
+		<p>You are a <strong>Libra</strong>!</p>
+	</div>
+	<input type="radio" id="tabscorpio" name="mytabs">
+	<label for="tabscorpio">23rd October - 21st November</label>
+	<div class="tab">
+	<h2>23rd October - 21st November</h2>
+		<p>You are a <strong>Scorpio</strong>!</p>
+	</div>
+	<input type="radio" id="tabsagittarius" name="mytabs">
+	<label for="tabsagittarius">22nd November - 21st December</label>
+	<div class="tab">
+	<h2>22nd November - 21st December</h2>
+		<p>You are a <strong>Sagittarius</strong>!</p>
+	</div>
+
+
+<script src="index.js"></script>
 </body>
 </html>
